@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <h1>JavaScript Array</h1>
+    <script>
+      const arrayStr = ["Banana", "Orange", "Apple", "Mango"];
+
+      function printToString(arr) {
+        let h2 = document.createElement("h2");
+        h2.innerHTML = "Print the elements of an array using toString()";
+        document.body.appendChild(h2);
+
+        let p = document.createElement("p");
+        p.innerHTML = arr.toString();
+        document.body.appendChild(p);
+      }
+      printToString(arrayStr);
+
+      function printJoin(arr) {
+        let h2 = document.createElement("h2");
+        h2.innerHTML = "Print the elements of an array using join()";
+        document.body.appendChild(h2);
+
+        let p = document.createElement("p");
+        p.innerHTML = arr.join("&");
+        document.body.appendChild(p);
+      }
+      printJoin(arrayStr);
+
+      function printIndexValue(arr) {
+        let h2 = document.createElement("h2");
+        h2.innerHTML = "Print the elements of an array in the format of index: value";
+        document.body.appendChild(h2);
+
+        arr.forEach((value, index) => {
+          let p = document.createElement("p");
+          p.innerHTML = `${index}: ${value}`;
+          document.body.appendChild(p);
+        });
+
+        document.querySelectorAll("p").forEach((p) => {
+          p.style.padding = "0";
+          p.style.margin = "0";
+        });
+      }
+      printIndexValue(arrayStr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <script src="exercise3.js" defer></script>
+  </head>
+  <body>
+    <h1>Exercise 3</h1>
+    <div>
+      <h2>Add Numbers</h2>
+      <h3>Enter numbers separated by commas</h3>
+      <input type="text" id="sumInput" placeholder="e.g. 1,2,3,4,5" />
+      <button onclick="calculateSum()">Calculate sum</button>
+      <p id="sum"></p>
+    </div>
+
+    <div>
+      <h2>Find Max Numbers</h2>
+      <h3>Enter numbers separated by commas</h3>
+      <input type="text" id="maxInput" placeholder="e.g. 1,2,3,4,5" />
+      <button onclick="maxNumber()">Find max</button>
+      <p id="max"></p>
+    </div>
+
+    <div>
+      <h2>Add Only Numbers</h2>
+      <h3>Enter anything separated by commas</h3>
+      <input type="text" id="addInput" placeholder="4, 5, &quot;3.0 birds&quot;, true," />
+      <button onclick="sumOnlyNumbers()">Add only numbers</button>
+      <p id="add"></p>
+    </div>
+  </body>
+</html>
