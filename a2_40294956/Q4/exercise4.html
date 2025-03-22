@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="exercise4.css">
+    <script src="exercise4.js" defer></script>
+  </head>
+  <body>
+    <h1>Order Books Online</h1>
+    <table  cellspacing="20">
+      <tr>
+        <th>Book Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Basic Web Programming</td>
+        <td><input type="number" id="book1" value="0" min="0" oninput="refreshPage()"></td>
+        <td>$19.99</td>
+      </tr>
+      <tr>
+        <td>Intro to PHP</td>
+        <td><input type="number" id="book2" value="0" min="0"></td>
+        <td>$86.00</td>
+      </tr>
+      <tr>
+        <td>Advanced JQuery</td>
+        <td><input type="number" id="book3" value="0" min="0"></td>
+        <td>$55.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><button onclick="calculateTotal()">Calculate the order</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
